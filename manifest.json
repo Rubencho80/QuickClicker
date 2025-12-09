@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "QuickClicker",
+  "version": "1.0",
+  "description": "Busca elementos clicables según lo que escribes y los activa con Enter/Tab.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_title": "QuickClicker",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "/icons/16.png",
+    "32": "/icons/32.png",
+    "48": "/icons/48.png",
+    "128": "/icons/128.png",
+    "512": "/icons/512.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

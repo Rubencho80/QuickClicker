@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="title">QuickClicker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 data-i18n="heading">QuickClicker</h1>
+
+    <label class="row" id="labelAuto">
+      <input id="autoOpen" type="checkbox" />
+      <span data-i18n="autoOpen">Abrir automáticamente</span>
+    </label>
+
+    <div id="keySection" class="row hidden">
+      <label data-i18n="openWithKeyLabel">Abrir con tecla:</label>
+      <input id="keyInput" type="text" maxlength="2" placeholder="Pulsa una tecla" readonly />
+    </div>
+
+    <label class="row">
+      <input id="includeAttrs" type="checkbox" />
+      <span data-i18n="includeAttrs">Incluir atributos (<em>title</em>, <em>aria-label</em>, <em>placeholder</em>)</span>
+    </label>
+
+    <!-- Idioma -->
+    <label class="row">
+      <span data-i18n="langLabel">Idioma:</span>
+      <select id="langSelect" aria-label="Idioma">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+    </label>
+
+    <div class="row">
+      <button id="resetBtn" data-i18n="resetBtn">Restablecer a valores por defecto</button>
+    </div>
+
+    <p class="small" id="versionText">Versión 1.0</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
