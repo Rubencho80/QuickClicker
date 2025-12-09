@@ -1,6 +1,8 @@
 # QuickClicker
 A Chrome Web Store extension. Find and click elements on any page just by typing.
 
+My extensions website: https://sites.google.com/view/extensiones-rubencho80
+
 A tiny floating search widget that detects links and buttons containing the text you type, highlights them and lets you navigate with the keyboard to activate them with Enter.
 
 ## What it does
